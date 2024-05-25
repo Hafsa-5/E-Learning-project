@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elearningproject.CertificatsController">
+
+    <VBox fx:id="certificatsRoot" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <TableView fx:id="certificatsTable">
+                <columns>
+                    <TableColumn fx:id="idCertificatColumn" prefWidth="75.0" text="ID Certificat" />
+                    <TableColumn fx:id="titreCoursColumn" prefWidth="139.33334350585938" text="Cours" />
+                    <TableColumn fx:id="contenuCertificatColumn" prefWidth="384.0" text="Contenu" />
+                </columns>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#telechargerCertificat" style="-fx-background-color: #002E4F;" text="Telecharger Certificat" textFill="WHITE" />
+        </children>
+    </VBox>
+
+</AnchorPane>

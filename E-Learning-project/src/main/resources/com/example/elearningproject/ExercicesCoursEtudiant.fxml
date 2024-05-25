@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elearningproject.ExercicesCoursEtudiantController">
+    <VBox alignment="CENTER" prefHeight="356.0" prefWidth="600.0" spacing="10">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+
+        <Label text="Exercices du Cours" textFill="#1ba15a">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+
+        <TableView fx:id="exercicesTable" prefHeight="400.0" prefWidth="11.0">
+            <columns>
+                <TableColumn fx:id="idColumn" minWidth="8.0" prefWidth="31.333343505859375" text="ID" />
+                <TableColumn fx:id="questionColumn" prefWidth="251.99996948242188" text="Question" />
+                <TableColumn fx:id="reponseColumn" prefWidth="251.99996948242188" text="Réponse" />
+            </columns>
+        </TableView>
+    </VBox>
+    <Button fx:id="repondreButton" layoutX="274.0" layoutY="356.0" onAction="#OuvrirFenetreReponseEtudiant" style="-fx-background-color: #1BA15A;" styleClass="repondre-button" text="Répondre" textFill="WHITE" />
+</AnchorPane>

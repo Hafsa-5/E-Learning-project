@@ -1,0 +1,7 @@
+.repondre-button {
+    -fx-opacity: 1.0; /* Réglage de l'opacité à 1 */
+}
+
+.repondre-button:disabled {
+    -fx-opacity: 0.5; /* Réglage de l'opacité à 0.5 lorsque le bouton est désactivé */
+}

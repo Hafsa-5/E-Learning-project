@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elearningproject.HelloController">
+   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dbebda;" />
+    <!-- Left side - Form elements -->
+    <VBox fillWidth="false" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #dbebda;">
+        <Label prefHeight="35.0" prefWidth="513.0" text="Welcome to e-learning Application" textAlignment="CENTER" textFill="#1ca15a">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+
+        <Label text="Email" />
+        <TextField fx:id="emailField" prefWidth="226.0" />
+
+        <Label text="Mot de passe" />
+        <PasswordField fx:id="passwordField" prefWidth="226.0" />
+
+
+        <Pane prefHeight="19.0" prefWidth="200.0" />
+
+        <Button onAction="#handleInscription" style="-fx-background-color: #1ca15a;" text="Se connecter" textFill="WHITE" />
+    </VBox>
+
+    <!-- Right side - Image -->
+    <AnchorPane prefHeight="500.0" prefWidth="504.0" style="-fx-background-color: #dbebda;">
+        <ImageView fitHeight="348.0" fitWidth="402.0" layoutX="50.0" layoutY="76.0">
+            <image>
+                <Image url="@images/img.png" />
+            </image>
+        </ImageView>
+    </AnchorPane>
+</HBox>

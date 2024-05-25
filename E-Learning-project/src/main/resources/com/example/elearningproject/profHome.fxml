@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elearningproject.ProfHomeController">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1ca15a;">
+      <children>
+         <VBox layoutX="15.0" layoutY="68.0" prefHeight="363.0" prefWidth="161.0">
+            <children>
+               <Label fx:id="welcomeLabel" prefHeight="27.0" prefWidth="158.0" text="Label" textFill="#f2b32c">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="Accueil" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Accueil" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="ListeDesCoursProf" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Liste des cours" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="AjouterUnCours" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Ajouter un cours" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="ListeDesLeconsProf" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Liste des leçons" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="ResultatProf" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Resultat" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="ForumdeDiscussion" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Forum de Discussion" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button fx:id="Profil" mnemonicParsing="false" onAction="#changeContent" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1BA15A;" text="Profil" textFill="WHITE" />
+               <Pane prefHeight="18.0" prefWidth="161.0" />
+               <Button onAction="#handleLogout" style="-fx-background-color: #a2fda8;" text="Logout" />
+            </children>
+         </VBox>
+      </children>
+   </AnchorPane>
+   <BorderPane>
+      <center>
+         <VBox fx:id="dynamicContent" alignment="CENTER" prefHeight="500.0" prefWidth="815.0" style="-fx-background-color: #dbebda;">
+            <children>
+               <Pane prefHeight="200.0" prefWidth="200.0" />
+               <ImageView fitHeight="367.0" fitWidth="429.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/teacher.png" />
+                  </image>
+               </ImageView>
+               <Pane prefHeight="200.0" prefWidth="200.0" />
+            </children></VBox>
+      </center>
+   </BorderPane>
+</HBox>

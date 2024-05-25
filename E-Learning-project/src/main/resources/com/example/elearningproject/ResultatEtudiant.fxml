@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elearningproject.ResultatEtudiantController">
+
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="727.0" spacing="10">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+
+        <Label text="Résultats" textFill="#1ba15a">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+      
+              <ComboBox fx:id="coursComboBox" promptText="Sélectionner un Cours">
+        </ComboBox>
+
+            <Pane prefHeight="26.0" prefWidth="43.0" />
+      
+                    <Button onAction="#afficherReponses" style="-fx-background-color: #1BA15A;" text="Afficher les resultats" textFill="WHITE" />
+         </children>
+      </HBox>
+
+        <TableView fx:id="reponsesTable" prefHeight="300.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="titreColumn" prefWidth="133.33334350585938" text="Cours" />
+                <TableColumn fx:id="questionColumn" prefWidth="236.66665649414062" text="Question" />
+                <TableColumn fx:id="reponseColumn" minWidth="0.0" prefWidth="188.0" text="Réponse" />
+                <TableColumn fx:id="resultatColumn" prefWidth="127.33333333333337" text="Resultat" />
+            </columns>
+        </TableView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+    </VBox>
+
+</AnchorPane>
